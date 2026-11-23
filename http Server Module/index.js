@@ -13,7 +13,6 @@ const server = http.createServer((req, res)=>{
     }else if(req.method === "PUT"){
         res.end("PUT Request")
     }else{
-        res.writeHead(404, {'content-type':'text/plain'})
         res.end('404 Not Found')
     }
 
