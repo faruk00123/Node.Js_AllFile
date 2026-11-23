@@ -3,9 +3,6 @@ const server = http.createServer((req, res)=>{
     const {url: pageUrl} = req
     console.log(pageUrl)
 
-    res.writeHead(200, {'content-type':'text/plain'})
-
-    // basic routing
     if(pageUrl === '/'){
         res.end(`Welcome to the Blog Home page`)
     }else if(pageUrl === '/about'){
